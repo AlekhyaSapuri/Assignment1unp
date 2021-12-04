@@ -18,7 +18,7 @@ colnames(naval_vessel)[colnames(naval_vessel)=="V17"] <-"cdecay"
 kde=density(naval_vessel$cdecay)
 plot(kde,main = "Kernel Density plot")
 
-# Answer: The density is a continuous uniform distribution.
+# Answer: The density plot is a continuous uniform distribution.
 
 #2 Draw a scatterplot matrix on the naval dataset and watching the diagram name any two features which are linearly related to most of the other features.
 pairs(naval_vessel[,1:18])
