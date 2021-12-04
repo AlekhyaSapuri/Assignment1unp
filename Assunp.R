@@ -16,7 +16,7 @@ colnames(naval_vessel)[colnames(naval_vessel)=="V17"] <-"cdecay"
 #What kind of distribution does Compressor Decay State Coefficient have?
 
 kde=density(naval_vessel$cdecay)
-plot(kde)
+plot(kde,main = "Kernel Density plot")
 
 # Answer: The density plot is close to a continous uniform distribution.
 
