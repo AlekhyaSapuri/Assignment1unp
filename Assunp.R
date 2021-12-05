@@ -46,6 +46,6 @@ View(boston)
 #6 Load the Titanic dataset (inbuilt to R), then find out how many male child survived? and How many first class passengers were there?
 titanic=data.frame(Titanic)
 View(titanic)
-titanic%>%count(Sex=="Male" & Age=="Child" & Survived=="Yes")
-titanic%>%count(Class=="1st")
+titanic%>%filter(Sex=="Male" & Age=="Child" & Survived=="Yes")%>%summarise(male_child_survived=sum(Freq))
+titanic%>%filter(Class=="1st")%>%summarise(total_1st_class=sum(Freq))
 
